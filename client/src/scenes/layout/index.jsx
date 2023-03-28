@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, useMediaQuery } from "@mui/material";
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom"; // Outlet is a component that renders the current route's child routes
 import { useSelector } from "react-redux";
 import Navbar from "components/Navbar";
 import Sidebar from "components/Sidebar";

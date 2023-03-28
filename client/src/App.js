@@ -26,7 +26,9 @@ function App() {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Routes>
-            <Route element={<Layout />}>
+            <Route element={<Layout />}> {/* Any route within the Layout component will be rendered within the Layout component, so you can have
+            the header and the sidebar on every page.
+            */}
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/products" element={<Products />} />
